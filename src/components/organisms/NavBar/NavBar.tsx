@@ -10,7 +10,7 @@ function NavBar(): React.ReactElement {
         root: {
             flexGrow: 1,
             position: 'fixed',
-            width: "100%"
+            width: "100%",
         },
     });
     const classes = useStyles();

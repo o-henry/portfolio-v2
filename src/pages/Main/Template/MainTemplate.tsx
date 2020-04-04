@@ -26,6 +26,16 @@ function MainTemplate(): React.ReactElement {
             color: theme.palette.text.secondary,
             height: '45rem'
         },
+        about: {
+            paddingRight: theme.spacing(5),
+            paddingLeft: theme.spacing(5),
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'left',
+            color: theme.palette.text.secondary,
+            height: '25rem'
+        },
         icon: {
             fontSize: '4rem'
         }
@@ -54,6 +64,10 @@ function MainTemplate(): React.ReactElement {
                             </div>
                         </Paper>
                     </Grid>
+                    <Grid item xs={12}>
+                        <Paper className={classes.about}>
+                        </Paper>
+                    </Grid>
                     <Grid item xs={6}>
                         <Paper className={classes.paper}>xs=6</Paper>
                     </Grid>
@@ -62,7 +76,7 @@ function MainTemplate(): React.ReactElement {
                     </Grid>
                 </Grid>
             </section>
-        </div>
+        </div >
     )
 }
 

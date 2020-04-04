@@ -17,6 +17,7 @@
     "react-icons": "^3.9.0",
     "react-scripts": "3.4.1",
     "react-typist": "^2.0.5",
+    "scroll-snap": "^3.0.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
