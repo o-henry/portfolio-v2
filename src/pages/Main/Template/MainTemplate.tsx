@@ -45,9 +45,8 @@ function MainTemplate(): React.ReactElement {
                         <Paper className={classes.paper}>
                             <div className='content-head'>
                                 Hello,
-                                <p>
-                                    <Content />
-                                </p>
+                                <br />
+                                <Content />
                                 <a
                                     target="_blank"
                                     rel="noopener noreferrer"

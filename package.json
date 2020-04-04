@@ -16,6 +16,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-typist": "^2.0.5",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "@material-ui/types": "^5.0.0",
-    "@types/node-sass": "^4.11.0"
+    "@types/node-sass": "^4.11.0",
+    "@types/react-typist": "^2.0.1"
   }
 }
