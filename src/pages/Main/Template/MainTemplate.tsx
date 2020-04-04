@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavBar } from 'components';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -26,6 +27,7 @@ function MainTemplate(): React.ReactElement {
 
     return (
         <div className={classes.root}>
+            <NavBar />
             <Grid container spacing={5}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>xs=12</Paper>

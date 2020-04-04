@@ -1,23 +1,36 @@
-import React from 'react'
-import { makeStyles, Theme, useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
+import React, { useState } from 'react'
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-
-interface TabPanelProps {
-    children?: React.ReactNode;
-    dir?: string;
-    index: any;
-    value: any;
-}
 
 function NavBar(): React.ReactElement {
+    const [value, setValue] = useState(0)
+    const useStyles = makeStyles({
+        root: {
+            flexGrow: 1,
+        },
+    });
+    const classes = useStyles();
+
+    const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+        setValue(newValue);
+    };
+
     return (
-        <div>
-            'test'
-        </div>
+        <Paper className={classes.root}>
+            <Tabs
+                value={value}
+                onChange={handleChange}
+                indicatorColor="primary"
+                textColor="primary"
+                centered
+            >
+                <Tab label="ABOUT" />
+                <Tab label="PORTFOLIO" />
+                <Tab label="CONTACT" />
+            </Tabs>
+        </Paper>
     )
 }
 
