@@ -1,0 +1,1 @@
+export { default as NavBar } from './organisms/NavBar/NavBar'
