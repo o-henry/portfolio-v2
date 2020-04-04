@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// web-font
+@font-face {
+  src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  font-family: "Noto Sans KR", NotoSans-Mediumm, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "BMJUA";
+}
+
+html,
+body,
+#root,
+#root > div {
+  // overflow: hidden;
+  font-family: "BMJUA";
+  height: 100%;
+}
+
+/* abstract */
+@import "abstract/reset";
