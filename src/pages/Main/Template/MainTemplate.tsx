@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavBar, Content } from 'components';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
-import Mail from '@material-ui/icons/MailOutline';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
@@ -45,14 +44,12 @@ function MainTemplate(): React.ReactElement {
                         <Paper className={classes.paper}>
                             <div className='content-head'>
                                 Hello,
-                                <br />
                                 <Content />
                                 <a
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="mailto:c.henry.9209@gmail.com"
                                 >
-                                    <Mail className={classes.icon} />
                                 </a>
                             </div>
                         </Paper>

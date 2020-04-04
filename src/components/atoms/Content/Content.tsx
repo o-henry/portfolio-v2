@@ -3,21 +3,20 @@ import Typist from 'react-typist';
 
 function Content(): React.ReactElement {
     return (
-        <Typist>
+        <div className="content">
             <pre>
-                <span className="var-highlight">let</span>
-                {`
-            object = {
-                name: 'Foo',  
-                type: 'Bar',
-                location: 'Earth',
-                properties:['Javascript',
-                            'HTML',
-                            'CSS'];
-            }
-            `}
+                <Typist>
+                    {
+                        `${"\u00a0"}let 이찬행 = {  
+     type: 'Programmer',
+     location: 'South Korea',
+     character:['협업과 소통을 좋아하는 주니어 개발자 입니다.']
+     skills:[]
+ }`}
+                    <Typist.Delay ms={500} />
+                </Typist >
             </pre>
-        </Typist >
+        </div>
     )
 }
 
