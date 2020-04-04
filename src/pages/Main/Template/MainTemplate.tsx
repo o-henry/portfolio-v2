@@ -1,7 +1,7 @@
 import React from 'react'
-import { NavBar } from 'components';
+import { NavBar, Content } from 'components';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
-import Mail from '@material-ui/icons/Mail';
+import Mail from '@material-ui/icons/MailOutline';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
@@ -14,15 +14,16 @@ function MainTemplate(): React.ReactElement {
             '& > *': {
                 // margin: theme.spacing(3),
                 width: theme.spacing(500),
-                height: theme.spacing(10),
+                height: theme.spacing(7),
             },
         },
         paper: {
-            // padding: theme.spacing(3),
+            paddingRight: theme.spacing(5),
+            paddingLeft: theme.spacing(5),
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            textAlign: 'center',
+            textAlign: 'left',
             color: theme.palette.text.secondary,
             height: '45rem'
         },
@@ -38,25 +39,33 @@ function MainTemplate(): React.ReactElement {
             <header>
                 <NavBar />
             </header>
-            <Grid container spacing={5}>
-                <Grid item xs={12}>
-                    <Paper className={classes.paper}>
-                        <div className='content-head'>
-                            Hello,
-                            <p>
-                                프론트 / 백엔드
-                                <Mail className={classes.icon} />
-                            </p>
-                        </div>
-                    </Paper>
+            <section>
+                <Grid container spacing={5}>
+                    <Grid item xs={12}>
+                        <Paper className={classes.paper}>
+                            <div className='content-head'>
+                                Hello,
+                                <p>
+                                    <Content />
+                                </p>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="mailto:c.henry.9209@gmail.com"
+                                >
+                                    <Mail className={classes.icon} />
+                                </a>
+                            </div>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Paper className={classes.paper}>xs=6</Paper>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Paper className={classes.paper}>xs=6</Paper>
+                    </Grid>
                 </Grid>
-                <Grid item xs={6}>
-                    <Paper className={classes.paper}>xs=6</Paper>
-                </Grid>
-                <Grid item xs={6}>
-                    <Paper className={classes.paper}>xs=6</Paper>
-                </Grid>
-            </Grid>
+            </section>
         </div>
     )
 }
