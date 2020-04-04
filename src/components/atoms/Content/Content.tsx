@@ -1,5 +1,6 @@
 import React from 'react'
 import Typist from 'react-typist';
+import { FaGoogle, FaGithub, FaLinkedin, FaBlogger } from "react-icons/fa";
 
 function Content(): React.ReactElement {
     return (
@@ -7,11 +8,11 @@ function Content(): React.ReactElement {
             <pre>
                 <Typist>
                     {
-                        `${"\u00a0"}let 이찬행 = {  
-     type: 'Programmer',
-     location: 'South Korea',
-     character:['협업과 소통을 좋아하는 주니어 개발자 입니다.']
-     skills:[]
+                        `${"\u00a0"}let I = {  
+     type : 'Programmer',
+     location : 'South Korea',
+     character : ["I'm a junior developer 
+                       who loves collaboration and communication."]
  }`}
                     <Typist.Delay ms={500} />
                 </Typist >
