@@ -1,13 +1,8 @@
 import React from 'react';
+import { Main } from './pages';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        TEST
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+  return <Main />;
 }
 
 export default App;
