@@ -18,8 +18,13 @@ body,
 #root > div {
   // overflow: hidden;
   font-family: "Noto Sans KR", NotoSans-Mediumm, sans-serif;
-  height: 100%;
 }
 
 /* abstract */
 @import "abstract/reset";
+
+/* organisms */
+@import "organisms/navbar";
+
+/* templates */
+@import "templates/main";
