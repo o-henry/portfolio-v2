@@ -1,6 +1,7 @@
+//@ts-nocheck
 import React from 'react'
 import { NavBar, Content } from 'components';
-import { apolloGql, MouseScroll, typescriptIcon } from 'static';
+import { apolloGql, MouseScroll, typescriptIcon, local, crunch, blinker, landing } from 'static';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 import { DiMysql, DiMongodb } from "react-icons/di";
@@ -47,6 +48,17 @@ function MainTemplate(): React.ReactElement {
         },
         icon: {
             fontSize: '4rem'
+        },
+        portfolio: {
+            height: '47rem',
+            fontFamily: 'Raleway',
+            fontWeight: 'bold',
+            fontSize: '4rem',
+            display: 'flex',
+            justifyContent: 'center',
+            textAlign: 'center',
+            alignItems: 'center',
+            height: '49rem',
         }
     }));
 
@@ -78,7 +90,6 @@ function MainTemplate(): React.ReactElement {
                                 </h2>
                             </div>
                             <div className="icon-layout">
-                                {/* <div>PROGRAMMING LANGUAGES & TOOLS</div> */}
                                 <FaJsSquare className="icon" id="js-icon" size={50} />
                                 <FaHtml5 className="icon" id="html-icon" size={45} />
                                 <FaCss3Alt className="icon" id="css-icon" size={45} />
@@ -94,9 +105,27 @@ function MainTemplate(): React.ReactElement {
                     </Grid>
                 </section>
                 <section>
-                    <Grid item xs={12}>
-                        <Paper className={classes.paper}>xs=6</Paper>
-                    </Grid>
+                    <Paper className={classes.portfolio}>
+
+                        <div className="app">
+                            <h2>WORK</h2>
+                            <ul className="hs no-scrollbar">
+                                <li className="item">
+                                    <img className="img-border" src={blinker} width="400rem" height="280rem" />
+                                </li>
+                                <li className="item">
+                                    <img className="img-border" src={crunch} width="400rem" height="280rem" />
+                                </li>
+                                <li className="item">
+                                    <img className="img-border" src={local} width="400rem" height="280rem" />
+                                </li>
+                                <li className="item">
+                                    <img className="img-border" src={landing} width="430rem" height="280rem" />
+                                </li>
+                                <li className="item">test</li>
+                            </ul>
+                        </div>
+                    </Paper>
                 </section>
             </Grid>
         </div >
