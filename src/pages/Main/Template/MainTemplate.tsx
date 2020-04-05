@@ -48,8 +48,8 @@ function MainTemplate(): React.ReactElement {
             <header>
                 <NavBar />
             </header>
-            <section>
-                <Grid container spacing={5}>
+            <Grid direction="row" container spacing={5}>
+                <section>
                     <Grid item xs={12}>
                         <Paper className={classes.paper}>
                             <div className='content-head'>
@@ -64,18 +64,24 @@ function MainTemplate(): React.ReactElement {
                             </div>
                         </Paper>
                     </Grid>
+                </section>
+                <section>
                     <Grid item xs={12}>
                         <Paper className={classes.about}>
                         </Paper>
                     </Grid>
+                </section>
+                <section>
                     <Grid item xs={6}>
                         <Paper className={classes.paper}>xs=6</Paper>
                     </Grid>
+                </section>
+                <section>
                     <Grid item xs={6}>
                         <Paper className={classes.paper}>xs=6</Paper>
                     </Grid>
-                </Grid>
-            </section>
+                </section>
+            </Grid>
         </div >
     )
 }
