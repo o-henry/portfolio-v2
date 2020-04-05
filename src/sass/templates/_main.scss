@@ -9,18 +9,47 @@
   flex-direction: row;
   .icon {
     display: flex;
-    line-height: 4rem;
     height: 4rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    padding: 5rem 1rem 0 1rem;
     color: #4c555c;
     display: flex;
     justify-content: space-around;
     opacity: 0.5;
   }
+  #js-icon {
+    color: #f2e205;
+    opacity: 1;
+  }
+  #html-icon {
+    color: #f2561d;
+    opacity: 1;
+  }
+  #css-icon {
+    color: #0477bf;
+    opacity: 1;
+  }
+  #md-icon {
+    color: green;
+    opacity: 1;
+  }
+  #react-icon {
+    color: #a0d9d9;
+    opacity: 1;
+  }
+  #aws-icon {
+    color: #f29f05;
+    opacity: 1;
+  }
+  #node-icon {
+    color: #90d948;
+    opacity: 0.8;
+  }
 }
 
 #scroll {
+  animation: scroll 0.6s ease-in Infinite Alternate;
   position: absolute;
   // bottom: 0;
   top: 45rem;
@@ -31,4 +60,15 @@
   display: flex;
   justify-content: space-around;
   opacity: 0.5;
+}
+
+@keyframes scroll {
+  0% {
+    top: 44rem;
+  }
+  95% {
+  }
+  to {
+    top: 45rem;
+  }
 }

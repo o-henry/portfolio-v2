@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavBar, Content } from 'components';
-import { apolloGql, MouseScroll } from 'static';
+import { apolloGql, MouseScroll, typescriptIcon } from 'static';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 import { DiMysql, DiMongodb } from "react-icons/di";
@@ -40,7 +40,7 @@ function MainTemplate(): React.ReactElement {
             textAlign: 'left',
             color: theme.palette.text.secondary,
             height: '47rem',
-            background: '#F2F2F2',
+            background: '#f1f5f5',
             fontFamily: 'Raleway',
             fontWeight: 'bold',
             fontSize: '4rem'
@@ -74,19 +74,21 @@ function MainTemplate(): React.ReactElement {
                         <Paper className={classes.about}>
                             <div>
                                 <h2>
-                                    WHAT I CAN DO?
+                                    WHAT I CAN DO ?
                                 </h2>
                             </div>
                             <div className="icon-layout">
-                                <img src={apolloGql} alt='gql' className="icon" />
-                                <FaAws className="icon" size={50} />
-                                <FaNode className="icon" size={50} />
-                                <FaJsSquare className="icon" size={50} />
-                                <FaReact className="icon" size={50} />
+                                {/* <div>PROGRAMMING LANGUAGES & TOOLS</div> */}
+                                <FaJsSquare className="icon" id="js-icon" size={50} />
+                                <FaHtml5 className="icon" id="html-icon" size={45} />
+                                <FaCss3Alt className="icon" id="css-icon" size={45} />
+                                <FaReact className="icon" id="react-icon" size={50} />
+                                <FaAws className="icon" id="aws-icon" size={50} />
+                                <FaNode className="icon" id="node-icon" size={65} />
+                                <DiMongodb className="icon" id="md-icon" size={50} />
                                 <DiMysql className="icon" size={50} />
-                                <DiMongodb className="icon" size={50} />
-                                <FaHtml5 className="icon" size={50} />
-                                <FaCss3Alt className="icon" size={50} />
+                                <img src={apolloGql} alt='gql' className="icon" width="53rem" />
+                                <img src={typescriptIcon} alt="ts" className="icon" width="50rem" />
                             </div>
                         </Paper>
                     </Grid>
