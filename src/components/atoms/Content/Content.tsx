@@ -1,6 +1,5 @@
 import React from 'react'
 import Typist from 'react-typist';
-import { FaGoogle, FaGithub, FaLinkedin, FaBlogger } from "react-icons/fa";
 
 function Content(): React.ReactElement {
     return (

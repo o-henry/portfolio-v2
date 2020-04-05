@@ -3,3 +3,32 @@
   line-height: 7rem;
   font-family: 'Special Elite';
 }
+
+.icon-layout {
+  display: flex;
+  flex-direction: row;
+  .icon {
+    display: flex;
+    line-height: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #4c555c;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.5;
+  }
+}
+
+#scroll {
+  position: absolute;
+  // bottom: 0;
+  top: 45rem;
+  width: 5rem;
+  display: flex;
+  height: 4rem;
+  color: #4c555c;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.5;
+}
