@@ -24,13 +24,15 @@ function NavBar(): React.ReactElement {
             <Tabs
                 value={value}
                 onChange={handleChange}
-                indicatorColor="primary"
+                indicatorColor="none"
                 textColor="primary"
                 centered
             >
-                <Tab label="ABOUT" />
-                <Tab label="PORTFOLIO" />
-                <Tab label="CONTACT" />
+                <Tab className="tabs-setting" label="ABOUT">
+                    <a href="#about" />
+                </Tab>
+                <Tab className="tabs-setting" label="PORTFOLIO" />
+                <Tab className="tabs-setting" label="CONTACT" />
             </Tabs>
         </Paper>
     )

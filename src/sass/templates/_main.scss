@@ -6,83 +6,6 @@
   --gutter: 120px;
 }
 
-/* caruosel */
-.app {
-  padding: 2rem 0 0 0;
-  display: grid;
-  // grid-gap: var(--gutter) 0;
-  grid-template-columns: var(--gutter) 1fr var(--gutter);
-  align-content: center;
-  width: 100%;
-  // background: yellow;
-}
-
-.app > * {
-  grid-column: 2 / -2;
-}
-
-.app > .full {
-  grid-column: 1 / -1;
-}
-
-.hs {
-  display: grid;
-  grid-gap: calc(var(--gutter) / 2);
-  grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
-  grid-template-rows: minmax(300px, 1fr);
-  overflow-x: scroll;
-  scroll-snap-type: x proximity;
-  padding-bottom: calc(0.75 * var(--gutter));
-  margin-bottom: calc(-0.25 * var(--gutter));
-}
-
-.no-scrollbar {
-  scrollbar-width: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.hs:before,
-.hs:after {
-  content: '';
-  width: 10px;
-}
-
-.hs > li,
-.item {
-  scroll-snap-align: center;
-  padding: calc(var(--gutter) / 2 * 1.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 8px;
-}
-
-.img-border {
-  box-shadow: 0 1px 3px rgba(1, 1, 1, 0.2);
-  border: 1px solid whitesmoke;
-  border-radius: 10px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  cursor: pointer;
-  &:hover {
-    transition: all 0.3s ease 0s;
-    transform: scale(1.2);
-  }
-}
-/*----*/
-
 .content-head {
   font-size: 4rem;
   line-height: 7rem;
@@ -95,13 +18,16 @@ li {
   .icon {
     display: flex;
     height: 4rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     padding: 5rem 1rem 0 1rem;
     color: #4c555c;
     display: flex;
     justify-content: space-around;
     opacity: 0.5;
+  }
+  #apollo-gql {
+    opacity: 1;
   }
   #js-icon {
     color: #f2e205;
@@ -156,4 +82,16 @@ li {
   to {
     top: 45rem;
   }
+}
+
+.title-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5rem 0 5rem;
+  padding-top: 5rem;
+}
+
+h5 {
+  font-size: 3rem;
 }
