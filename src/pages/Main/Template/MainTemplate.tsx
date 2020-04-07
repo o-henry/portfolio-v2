@@ -72,11 +72,14 @@ function MainTemplate(): React.ReactElement {
         card: {
             maxWidth: 345,
             margin: theme.spacing(5),
-            boxShadow: '0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12) !important'
+            // height: 500,
+            // boxShadow: '0 1px 3px rgba(1,1,1,.2) !important',
+            boxShadow: '0 20px 20px rgba(0,0,0,.08) !important',
         },
         media: {
-            fontFamily: 'Raleway',
-            height: 200,
+            // margin: '3rem 0 3rem 0',
+            padding: '1rem',
+            height: 250,
         }
     }));
 
@@ -135,9 +138,9 @@ function MainTemplate(): React.ReactElement {
                                             title="BLINKER"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                윙크로 게임하기 팀 프로젝트 2019 openCV 기반 BRFV4 SDK를 사용하여 윙크를 인식, 깜빡일때 점프하는 웹 게임을 개발했습니다
+                                            <Typography gutterBottom variant="h5" component="h2">BLINKER</Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
+                                                2019
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -156,9 +159,9 @@ function MainTemplate(): React.ReactElement {
                                             title="CRUNCH"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">CRUNCH PRICE</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                기업 협업 프로젝트 2019 AWS Personalize를 활용하여 MD의 개입없이 인공지능으로 사용자 개개인 에게 맞는 상품 추천 시스템을 구현했습니다.
+                                                2019
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -177,9 +180,10 @@ function MainTemplate(): React.ReactElement {
                                             title="LOCAL SNS"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">LOCAL SNS</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                LOCAL SNS 개인 프로젝트 2019 (진행 중) 인스타그램 해시태그, 장소, 날짜 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 입니다.                                            </Typography>
+                                                2019
+                                            </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -193,13 +197,14 @@ function MainTemplate(): React.ReactElement {
                                     <CardActionArea>
                                         <CardMedia
                                             className={classes.media}
-                                            image={local}
-                                            title="LOCAL SNS"
+                                            image={landing}
+                                            title="PAPAYA"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">PAPAYA</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                LOCAL SNS 개인 프로젝트 2019 (진행 중) 인스타그램 해시태그, 장소, 날짜 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 입니다.                                            </Typography>
+                                                2020
+                                            </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -209,7 +214,26 @@ function MainTemplate(): React.ReactElement {
                                     </CardActions>
                                 </Card>
 
-
+                                <Card className={classes.card}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                            className={classes.media}
+                                            image={cookie}
+                                            title="COOKIE"
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="h2">COOKIE RUN</Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p">
+                                                2020
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" color="primary">
+                                            Learn More
+                                        </Button>
+                                    </CardActions>
+                                </Card>
                             </div>
                         </div>
                     </Paper>
