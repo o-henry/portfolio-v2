@@ -1,6 +1,9 @@
 import React from 'react';
 import { Main, Blinker } from 'pages';
 import { Route, Switch } from 'react-router-dom';
+import { animated, config } from 'react-spring'
+import { Transition } from 'react-spring/renderprops'
+
 import 'sass/main.scss'
 
 const App: React.FC = () => {
