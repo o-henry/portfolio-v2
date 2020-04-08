@@ -1,6 +1,7 @@
 //@ts-nocheck
 import React from 'react'
 import { NavBar, Content } from 'components';
+import { Link } from 'react-router-dom'
 import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker, landing } from 'static';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
@@ -128,22 +129,24 @@ function MainTemplate(): React.ReactElement {
                 <section>
                     <Paper className={classes.portfolio}>
                         <div>
-                            <h2>WORK</h2>
+                            <h2 id="about">WORK</h2>
                             <div className="title-layout">
                                 <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={blinker}
-                                            title="BLINKER"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">BLINKER</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
-                                                2019
+                                    <Link to="/blinker">
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image={blinker}
+                                                title="BLINKER"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
+                                                    2019
                                             </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
+                                            </CardContent>
+                                        </CardActionArea>
+                                    </Link>
                                     <CardActions>
                                         <Button size="small" color="primary">
                                             Learn More
@@ -159,7 +162,7 @@ function MainTemplate(): React.ReactElement {
                                             title="CRUNCH"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">CRUNCH PRICE</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 2019
                                             </Typography>
@@ -180,7 +183,7 @@ function MainTemplate(): React.ReactElement {
                                             title="LOCAL SNS"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">LOCAL SNS</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 2019
                                             </Typography>
@@ -201,7 +204,7 @@ function MainTemplate(): React.ReactElement {
                                             title="PAPAYA"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">PAPAYA</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">Papaya</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 2020
                                             </Typography>
@@ -222,9 +225,28 @@ function MainTemplate(): React.ReactElement {
                                             title="COOKIE"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">COOKIE RUN</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 2020
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" color="primary">
+                                            Learn More
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+
+                                <Card className={classes.card}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                            className={classes.media}
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="h2">Coming Soon...</Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p">
+                                                2020... Maybe?
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>

@@ -28,9 +28,9 @@ function NavBar(): React.ReactElement {
                 textColor="primary"
                 centered
             >
-                <Tab className="tabs-setting" label="ABOUT">
-                    <a href="#about" />
-                </Tab>
+                <Tab className="tabs-setting" label="ABOUT" />
+                {/* <a href="#about" /> */}
+                {/* </Tab> */}
                 <Tab className="tabs-setting" label="PORTFOLIO" />
                 <Tab className="tabs-setting" label="CONTACT" />
             </Tabs>
