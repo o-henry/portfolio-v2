@@ -74,7 +74,6 @@ function MainTemplate(): React.ReactElement {
             maxWidth: 345,
             margin: theme.spacing(5),
             // height: 500,
-            // boxShadow: '0 1px 3px rgba(1,1,1,.2) !important',
             boxShadow: '0 20px 20px rgba(0,0,0,.08) !important',
         },
         media: {
@@ -132,7 +131,7 @@ function MainTemplate(): React.ReactElement {
                             <h2 id="about">WORK</h2>
                             <div className="title-layout">
                                 <Card className={classes.card}>
-                                    <Link to="/blinker">
+                                    <Link to="/blinker" style={{ textDecoration: 'none' }}>
                                         <CardActionArea>
                                             <CardMedia
                                                 className={classes.media}
