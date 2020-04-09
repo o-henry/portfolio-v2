@@ -110,8 +110,8 @@ h5 {
 }
 
 .MuiTypography-h5 {
-  font-family: 'Special Elite' !important;
-  font-weight: bold;
+  font-family: 'Raleway' !important;
+  font-weight: bold !important;
   color: rgba(0, 0, 0, 0.54) !important;
   border-bottom: 1px solid whitesmoke;
 }
@@ -122,4 +122,8 @@ h5 {
 
 .MuiGrid-grid-xs-12 {
   position: relative !important;
+}
+
+.MuiCardActionArea-root {
+  cursor: auto !important;
 }

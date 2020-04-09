@@ -1,5 +1,9 @@
+//@ts-ignore
+//@ts-nocheck
+
 import React from 'react'
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
+import { blinker } from 'static'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid';
 
@@ -24,7 +28,7 @@ function Blinker(): React.ReactElement {
             textAlign: 'left',
             color: theme.palette.text.secondary,
             height: '48rem',
-            backgroundImage: 'linear-gradient(rgb(255, 255, 255) 0%, rgb(184, 242, 255) 40%)',
+            flexDirection: 'column'
         },
     }))
 
@@ -38,7 +42,22 @@ function Blinker(): React.ReactElement {
                         <Paper className={classes.paper}>
                             <div className="blinker">
                                 윙크로 게임하기 팀 프로젝트 2019
-                        </div>
+                                <br />
+                                팀 프로젝트 2019
+                                <br />
+                                | Front-End | React | AWS |
+                            </div>
+                            <div>
+                                <iframe
+                                    className="blinker-video"
+                                    width="700"
+                                    height="455"
+                                    src="https://www.youtube.com/embed/dZItllhooso"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
                         </Paper>
                     </Grid>
                 </section>

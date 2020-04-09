@@ -15,6 +15,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Carousel from 'react-material-ui-carousel'
+
 
 
 function MainTemplate(): React.ReactElement {
@@ -81,6 +83,21 @@ function MainTemplate(): React.ReactElement {
             // margin: '3rem 0 3rem 0',
             padding: '1rem',
             height: 250,
+        },
+        education: {
+            fontFamily: 'Raleway',
+            fontWeight: 'bold',
+            background: '#f1f5f5',
+            fontSize: '4rem',
+            paddingRight: theme.spacing(5),
+            paddingLeft: theme.spacing(5),
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'left',
+            color: theme.palette.text.secondary,
+            height: '20rem',
+            margin: '30rem 0 0 0'
         }
     }));
 
@@ -129,24 +146,25 @@ function MainTemplate(): React.ReactElement {
                             <h2 id="about">WORK</h2>
                             <div className="title-layout">
                                 <Card className={classes.card}>
-                                    <Link to="/blinker" style={{ textDecoration: 'none' }}>
-                                        <CardActionArea>
-                                            <CardMedia
-                                                className={classes.media}
-                                                image={blinker}
-                                                title="BLINKER"
-                                            />
-                                            <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
-                                                    2019
+                                    <CardActionArea>
+                                        <CardMedia
+                                            className={classes.media}
+                                            image={blinker}
+                                            title="BLINKER"
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
+                                                2019
                                             </Typography>
-                                            </CardContent>
-                                        </CardActionArea>
-                                    </Link>
+                                        </CardContent>
+                                    </CardActionArea>
+
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            <Link to="/blinker" style={{ textDecoration: 'none' }}>
+                                                Learn More
+                                            </Link>
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -180,7 +198,7 @@ function MainTemplate(): React.ReactElement {
                                             title="LOCAL SNS"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">Local Sns</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 2019
                                             </Typography>
@@ -256,6 +274,17 @@ function MainTemplate(): React.ReactElement {
                             </div>
                         </div>
                     </Paper>
+                </section>
+                <section>
+                    <Grid item xs={12}>
+                        <Paper className={classes.education}>
+                            <div>
+                                <h2>
+                                    EDUCATION
+                                </h2>
+                            </div>
+                        </Paper>
+                    </Grid>
                 </section>
             </Grid>
         </div >
