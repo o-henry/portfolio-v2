@@ -63,24 +63,23 @@
   animation: scroll 0.6s ease-in Infinite Alternate;
   position: absolute;
   // bottom: 0;
-  top: 45rem;
+  top: 35rem;
   width: 5rem;
   display: flex;
   height: 4rem;
   color: #4c555c;
-  display: flex;
   justify-content: space-around;
   opacity: 0.5;
 }
 
 @keyframes scroll {
   0% {
-    top: 44rem;
+    top: 43rem;
   }
   95% {
   }
   to {
-    top: 45rem;
+    top: 44rem;
   }
 }
 
@@ -119,4 +118,8 @@ h5 {
 
 .MuiButtonBase-root {
   width: 365px;
+}
+
+.MuiGrid-grid-xs-12 {
+  position: relative !important;
 }

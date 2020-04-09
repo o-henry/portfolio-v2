@@ -6,7 +6,8 @@ import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker,
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 import { DiMysql, DiMongodb } from "react-icons/di";
-import Paper from '@material-ui/core/Paper';
+import Paper from '@material-ui/core/Paper'
+import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -14,7 +15,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+
 
 function MainTemplate(): React.ReactElement {
     const useStyles = makeStyles((theme: Theme) => createStyles({
@@ -87,9 +88,6 @@ function MainTemplate(): React.ReactElement {
 
     return (
         <div className={classes.root}>
-            <header>
-                <NavBar />
-            </header>
             <Grid direction="row" container spacing={5}>
                 <section>
                     <Grid item xs={12}>

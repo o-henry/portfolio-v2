@@ -34,14 +34,14 @@ body,
 }
 
 section {
-  height: 100vh;
+  height: 101vh;
   width: 100%;
   scroll-snap-align: center;
 }
 
 #root > div > div {
   font-weight: 800;
-  font-size: 25em;
+  // font-size: 25em;
   will-change: transform, opacity;
   text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
 }

@@ -1,3 +1,8 @@
-.blinker-layout {
-  background: yellow;
+.blinker {
+  display: flex;
+  top: 1rem;
+  justify-content: center;
+  align-items: center;
+  // background: linear-gradient(rgb(255, 255, 255) 0%, rgb(184, 242, 255) 40%);
+  // font-size: 10rem;
 }
