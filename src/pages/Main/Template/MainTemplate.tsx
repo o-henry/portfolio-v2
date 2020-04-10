@@ -87,14 +87,15 @@ function MainTemplate(): React.ReactElement {
             fontWeight: 'bold',
             background: '#f1f5f5',
             fontSize: '4rem',
-            padding: theme.spacing(2),
+            padding: theme.spacing(0.5),
+            paddingBottom: '0.9rem',
+            // height: '5rem',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'flex-end',
             textAlign: 'left',
-            height: '3rem',
-            margin: '27rem 0 0 0'
+            margin: '28rem 0 0 0'
         },
         footer: {
             fontFamily: 'Raleway',
@@ -304,39 +305,37 @@ function MainTemplate(): React.ReactElement {
                 <section>
                     <Grid item xs={12}>
                         <Paper className={classes.education}>
-                            <div>
-                                <h2>
-                                    <div className="Ani-hover">
-                                        <span className="Contact">
-                                            <a
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                href="mailto:c.henry.9209@gmail.com"
-                                            >
-                                                <FaGoogle size={26} />
-                                            </a>
-                                        </span>
-                                        <span className="Contact">
-                                            <a
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                href="https://github.com/o-henry"
-                                            >
-                                                <FaGithub size={26} />
-                                            </a>
-                                        </span>
-                                        <span className="Contact">
-                                            <a
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                href="https://o-henry.github.io/"
-                                            >
-                                                <FaBlogger size={26} />
-                                            </a>
-                                        </span>
-                                    </div>
-
-                                </h2>
+                            <div className="Ani-hover">
+                                <span id="copyright">
+                                    © 2020 CH. All right reserved.
+                                    </span>
+                                <span className="Contact">
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="mailto:c.henry.9209@gmail.com"
+                                    >
+                                        <FaGoogle size={20} />
+                                    </a>
+                                </span>
+                                <span className="Contact">
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://github.com/o-henry"
+                                    >
+                                        <FaGithub size={20} />
+                                    </a>
+                                </span>
+                                <span className="Contact">
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://o-henry.github.io/"
+                                    >
+                                        <FaBlogger size={20} />
+                                    </a>
+                                </span>
                             </div>
                         </Paper>
                     </Grid>
