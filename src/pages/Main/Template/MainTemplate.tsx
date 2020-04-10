@@ -1,6 +1,6 @@
 //@ts-nocheck
 import React from 'react'
-import { NavBar, Content } from 'components';
+import { Content } from 'components';
 import { Link } from 'react-router-dom'
 import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker, landing } from 'static';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
@@ -15,9 +15,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Carousel from 'react-material-ui-carousel'
-
-
 
 function MainTemplate(): React.ReactElement {
     const useStyles = makeStyles((theme: Theme) => createStyles({
@@ -39,7 +36,7 @@ function MainTemplate(): React.ReactElement {
             alignItems: 'center',
             textAlign: 'left',
             color: theme.palette.text.secondary,
-            height: '47rem',
+            height: '49rem',
         },
         about: {
             paddingRight: theme.spacing(5),
@@ -51,7 +48,7 @@ function MainTemplate(): React.ReactElement {
             alignItems: 'center',
             textAlign: 'left',
             color: theme.palette.text.secondary,
-            height: '47rem',
+            height: '49rem',
             background: '#f1f5f5',
             fontFamily: 'Raleway',
             fontWeight: 'bold',
@@ -78,6 +75,7 @@ function MainTemplate(): React.ReactElement {
             margin: theme.spacing(5),
             // height: 500,
             boxShadow: '0 20px 20px rgba(0,0,0,.08) !important',
+            transition: 'all 250ms cubic-bezier(.02, .01, .47, 1)'
         },
         media: {
             // margin: '3rem 0 3rem 0',
@@ -89,15 +87,27 @@ function MainTemplate(): React.ReactElement {
             fontWeight: 'bold',
             background: '#f1f5f5',
             fontSize: '4rem',
-            paddingRight: theme.spacing(5),
-            paddingLeft: theme.spacing(5),
+            padding: theme.spacing(2),
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'left',
+            height: '3rem',
+            margin: '27rem 0 0 0'
+        },
+        footer: {
+            fontFamily: 'Raleway',
+            fontWeight: 'bold',
+            fontSize: '4rem',
+            paddingRight: theme.spacing(5),
+            paddingLeft: theme.spacing(5),
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            // alignItems: 'center',
             color: theme.palette.text.secondary,
-            height: '20rem',
-            margin: '30rem 0 0 0'
+            height: '5rem',
         }
     }));
 
@@ -143,7 +153,7 @@ function MainTemplate(): React.ReactElement {
                 <section>
                     <Paper className={classes.portfolio}>
                         <div>
-                            <h2 id="about">WORK</h2>
+                            <h2 id="work-head">WORK</h2>
                             <div className="title-layout">
                                 <Card className={classes.card}>
                                     <CardActionArea>
@@ -275,12 +285,57 @@ function MainTemplate(): React.ReactElement {
                         </div>
                     </Paper>
                 </section>
+                {/* <section>
+                    <Grid item xs={12}>
+                        <Paper className={classes.education}>
+                            <div>
+                                <h2>
+                                    EDUCATION AND ACTIVITIES
+                                </h2>
+                            </div>
+                            <div className="education">
+                                Code states(Bootcamp) Immersive Course 14 | 2019 <br />
+                                AWS 101, 201 Seminar | 2019 <br />
+                                AWS Webinar | 2019
+                            </div>
+                        </Paper>
+                    </Grid>
+                </section> */}
                 <section>
                     <Grid item xs={12}>
                         <Paper className={classes.education}>
                             <div>
                                 <h2>
-                                    EDUCATION
+                                    <div className="Ani-hover">
+                                        <span className="Contact">
+                                            <a
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                href="mailto:c.henry.9209@gmail.com"
+                                            >
+                                                <FaGoogle size={26} />
+                                            </a>
+                                        </span>
+                                        <span className="Contact">
+                                            <a
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                href="https://github.com/o-henry"
+                                            >
+                                                <FaGithub size={26} />
+                                            </a>
+                                        </span>
+                                        <span className="Contact">
+                                            <a
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                href="https://o-henry.github.io/"
+                                            >
+                                                <FaBlogger size={26} />
+                                            </a>
+                                        </span>
+                                    </div>
+
                                 </h2>
                             </div>
                         </Paper>

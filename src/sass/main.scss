@@ -34,7 +34,13 @@ body,
 }
 
 section {
-  height: 101vh;
+  // height: 101vh;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+footer {
+  height: 5vh;
   width: 100%;
   scroll-snap-align: center;
 }

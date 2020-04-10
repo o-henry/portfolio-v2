@@ -9,7 +9,7 @@ function NavBar(): React.ReactElement {
     const useStyles = makeStyles({
         root: {
             flexGrow: 1,
-            position: 'absolute',
+            position: 'fixed',
             zIndex: 5,
             width: "100%",
         },

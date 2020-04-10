@@ -127,3 +127,26 @@ h5 {
 .MuiCardActionArea-root {
   cursor: auto !important;
 }
+
+.education {
+  font-size: 1rem !important;
+}
+.makeStyles-card-72:hover {
+  transform: translate(0, -20px);
+}
+
+.Ani-hover {
+  overflow: hidden;
+  .Contact {
+    margin: 0 1.5rem 0 1rem;
+    opacity: 0.5;
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+#work-head {
+  margin: 3rem 0 0 0 !important;
+}

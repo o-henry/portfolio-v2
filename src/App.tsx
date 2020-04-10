@@ -1,12 +1,10 @@
 //@ts-ignore
 //@ts-nocheck
-
 import React from 'react';
 import { Main, Blinker } from 'pages';
 import { NavBar } from 'components';
-import { BrowserRouter as Router, Switch, Route, Link, useLocation } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
-
 import 'sass/main.scss'
 
 const App: React.FC = () => {
