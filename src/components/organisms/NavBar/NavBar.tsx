@@ -1,42 +1,35 @@
-import React, { useState } from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import React, { useState } from "react";
+import { Contact } from 'components'
+import { useTransition } from "react-spring";
 
-function NavBar(): React.ReactElement {
-    const [value, setValue] = useState(0)
-    const useStyles = makeStyles({
-        root: {
-            flexGrow: 1,
-            position: 'fixed',
-            zIndex: 5,
-            width: "100%",
-        },
+function NavBar() {
+    const [modalVisible, setModalVisible] = useState(false);
+    const transitions = useTransition(modalVisible, null, {
+        from: { opacity: 0, marginTop: -1000, transform: 'translateX(0,-100%,0)' },
+        enter: { opacity: 1, marginTop: 0, transform: 'translateX(0,0%,0)' },
+        leave: { opacity: 0, transform: 'translateX(0,50%,0)' },
     });
-    const classes = useStyles();
-
-    const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-        setValue(newValue);
-    };
 
     return (
-        <Paper className={classes.root}>
-            <Tabs
-                value={value}
-                onChange={handleChange}
-                indicatorColor="none"
-                textColor="primary"
-                centered
+        <div className="navbar">
+            <button
+                className="show-modal-button"
+                onClick={() => setModalVisible(true)}
             >
-                <Tab className="tabs-setting" label="ABOUT" />
-                {/* <a href="#about" /> */}
-                {/* </Tab> */}
-                <Tab className="tabs-setting" label="PORTFOLIO" />
-                <Tab className="tabs-setting" label="CONTACT" />
-            </Tabs>
-        </Paper>
-    )
+                CONTACT
+            </button>
+            {transitions.map(
+                ({ item, key, props: style }) =>
+                    item && (
+                        <Contact
+                            style={style}
+                            closeModal={() => setModalVisible(false)}
+                            key={key}
+                        />
+                    )
+            )}
+        </div>
+    );
 }
 
 export default NavBar

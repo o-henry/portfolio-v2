@@ -1,0 +1,58 @@
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170vh;
+  height: 91vh;
+  top: 2rem;
+  color: #fff;
+  background: #f1f5f5;
+  left: calc(100% - 680px);
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.modal-title {
+  color: black;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.modal-content {
+  color: black !important;
+  font-size: 5rem;
+}
+
+.modal-close-button {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f1f5f5;
+  color: black;
+  font-size: 1em;
+  border: none;
+  //   margin-top: 10em;
+  width: 5%;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #9fadbf;
+    text-decoration: underline;
+  }
+}
+
+.sns {
+  position: absolute;
+  bottom: 6rem;
+  .sns-icon {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+}

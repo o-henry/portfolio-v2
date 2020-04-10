@@ -38,11 +38,15 @@ section {
   width: 100%;
   scroll-snap-align: center;
 }
-
 footer {
   height: 5vh;
   width: 100%;
   scroll-snap-align: center;
+}
+
+header {
+  display: flex !important;
+  justify-content: center;
 }
 
 #root > div > div {
@@ -59,7 +63,7 @@ footer {
 @import 'atoms/content';
 
 /* organisms */
-@import 'organisms/navbar';
+@import 'organisms/navbar', 'organisms/contact';
 
 /* templates */
 @import 'templates/main', 'templates/blinker';

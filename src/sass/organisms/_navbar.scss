@@ -2,3 +2,21 @@
   font-family: 'Muli' !important;
   font-weight: bold;
 }
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  padding: 2rem 0 0 0;
+  border-bottom: 1px solid black;
+}
+
+.show-modal-button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: 'Muli' !important;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+  color: black;
+}
