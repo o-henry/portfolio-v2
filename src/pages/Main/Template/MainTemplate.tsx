@@ -75,7 +75,7 @@ function MainTemplate(): React.ReactElement {
             margin: theme.spacing(5),
             // height: 500,
             boxShadow: '0 20px 20px rgba(0,0,0,.08) !important',
-            transition: 'all 250ms cubic-bezier(.02, .01, .47, 1)'
+            transition: 'all 250ms cubic-bezier(.02, .01, .47, 1)',
         },
         media: {
             // margin: '3rem 0 3rem 0',
@@ -138,13 +138,13 @@ function MainTemplate(): React.ReactElement {
                             </div>
                             <div className="icon-layout">
                                 <FaJsSquare className="icon" id="js-icon" size={50} />
-                                <FaHtml5 className="icon" id="html-icon" size={45} />
-                                <FaCss3Alt className="icon" id="css-icon" size={45} />
                                 <FaReact className="icon" id="react-icon" size={50} />
                                 <FaAws className="icon" id="aws-icon" size={50} />
                                 <FaNode className="icon" id="node-icon" size={65} />
                                 <DiMongodb className="icon" id="md-icon" size={50} />
                                 <img src={apolloGql} id="apollo-gql" alt='gql' className="icon" width="53rem" />
+                                <FaHtml5 className="icon" id="html-icon" size={45} />
+                                <FaCss3Alt className="icon" id="css-icon" size={45} />
                                 <DiMysql className="icon" size={50} />
                                 <img src={typescriptIcon} alt="ts" className="icon" width="50rem" />
                             </div>
@@ -166,7 +166,7 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
-                                                2019
+                                                윙크로 게임하기 <br /> 2019
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -190,7 +190,7 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                2019
+                                                개인화 추천 시스템 <br /> 2019
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -211,7 +211,7 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Local Sns</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                2019
+                                                인스타 기반 장소 추천 앱 <br /> 2019
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -232,7 +232,7 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Papaya</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                2020
+                                                Papaya 랜딩페이지 <br /> 2020
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -253,7 +253,7 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                2020
+                                                쿠키런 과제 사전예약 페이지 <br /> 2020
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>

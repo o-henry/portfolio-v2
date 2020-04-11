@@ -41,9 +41,7 @@ function Blinker(): React.ReactElement {
                     <Grid item xs={12}>
                         <Paper className={classes.paper}>
                             <div className="blinker">
-                                윙크로 게임하기 팀 프로젝트 2019
-                                <br />
-                                팀 프로젝트 2019
+                                윙크로 게임하기 [팀 프로젝트]
                                 <br />
                                 | Front-End | React | AWS |
                             </div>
@@ -52,9 +50,9 @@ function Blinker(): React.ReactElement {
                                     className="blinker-video"
                                     width="700"
                                     height="455"
-                                    src="https://www.youtube.com/embed/dZItllhooso"
+                                    src="https://www.youtube.com/embed/dZItllhooso?autoplay=1"
                                     frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allow="accelerometer; autoplay *; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen
                                 ></iframe>
                             </div>
