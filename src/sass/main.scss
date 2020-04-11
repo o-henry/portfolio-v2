@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 // web-font
-// @font-face {
-//   src: url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap')
-//   font-family: 'Noto Sans KR', NotoSans-Mediumm, sans-serif;
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Noto Sans KR', NotoSans-Mediumm, sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Raleway';
@@ -15,6 +15,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Special Elite';
+  src: url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lobster', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   font-family: 'Noto Sans KR', NotoSans-Mediumm, sans-serif;
 }
