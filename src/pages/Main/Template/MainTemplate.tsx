@@ -4,7 +4,9 @@ import { Content } from 'components';
 import { Link } from 'react-router-dom'
 import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker, landing } from 'static';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
-import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare, } from "react-icons/fa";
+import { GoBrowser } from 'react-icons/go'
+import { IoLogoGameControllerB } from 'react-icons/io'
 import { DiMysql, DiMongodb } from "react-icons/di";
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid';
@@ -166,7 +168,27 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
-                                                윙크로 게임하기 <br /> 2019
+                                                윙크로 게임하기
+                                                <span>
+                                                    <a
+                                                        id="link-position"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        href="https://github.com/o-henry/Blinker_Client"
+                                                    >
+                                                        <FaGithub size={20} />
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <a
+                                                        id="game-position"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        href="https://d3hj5v0x0oqu9l.cloudfront.net/"
+                                                    >
+                                                        <IoLogoGameControllerB size={26} />
+                                                    </a>
+                                                </span>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -190,13 +212,25 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                개인화 추천 시스템 <br /> 2019
+                                                개인화 추천 시스템
+                                                <span>
+                                                    <a
+                                                        id="game-position"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        href="https://o-henry.github.io/2019/10/21/AWSPersonalize/"
+                                                    >
+                                                        <FaBlogger size={26} />
+                                                    </a>
+                                                </span>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            <Link to="/crunch" style={{ textDecoration: 'none' }}>
+                                                Learn More
+                                            </Link>
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -209,15 +243,37 @@ function MainTemplate(): React.ReactElement {
                                             title="LOCAL SNS"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Local Sns</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                인스타 기반 장소 추천 앱 <br /> 2019
+                                                인스타 기반 장소 추천 앱
+                                                <span>
+                                                    <a
+                                                        id="link-position"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        href="https://github.com/o-henry/LocalServer"
+                                                    >
+                                                        <FaGithub size={20} />
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <a
+                                                        id="game-position"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        href="https://o-henry.github.io/2019/10/29/Insta/"
+                                                    >
+                                                        <FaBlogger size={26} />
+                                                    </a>
+                                                </span>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            <Link to="/insta" style={{ textDecoration: 'none' }}>
+                                                Learn More
+                                            </Link>
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -232,13 +288,15 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Papaya</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                Papaya 랜딩페이지 <br /> 2020
+                                                Papaya 랜딩페이지
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            <a href="https://www.papayamap.io/" target="_blank">
+                                                Learn More
+                                            </a>
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -253,7 +311,7 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                쿠키런 과제 사전예약 페이지 <br /> 2020
+                                                쿠키런 과제 사전예약 페이지
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>

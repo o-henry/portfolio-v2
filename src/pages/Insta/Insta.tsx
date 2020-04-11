@@ -6,7 +6,7 @@ import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid';
 
-function Blinker(): React.ReactElement {
+function Insta(): React.ReactElement {
     const useStyles = makeStyles((theme: Theme) => createStyles({
         root: {
             flexGrow: 1,
@@ -43,9 +43,9 @@ function Blinker(): React.ReactElement {
                                 className="blinker-video"
                                 width="100%"
                                 height="80%"
-                                src="https://www.youtube.com/embed/dZItllhooso?autoplay=1"
+                                src="https://www.youtube.com/embed/LkqD32oWN20?autoplay=1"
                                 frameborder="0"
-                                allow="accelerometer; autoplay *; encrypted-media; gyroscope; picture-in-picture"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
                         </Paper>
@@ -57,4 +57,4 @@ function Blinker(): React.ReactElement {
     )
 }
 
-export default Blinker
+export default Insta

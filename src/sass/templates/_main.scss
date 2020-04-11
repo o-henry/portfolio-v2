@@ -175,3 +175,19 @@ h5 {
 .media:hover {
   transform: translate(0, -20px) !important;
 }
+
+#link-position {
+  position: absolute;
+  right: 4rem;
+  opacity: 0.5;
+}
+#game-position {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+.MuiTypography-gutterBottom {
+  font-family: Lobster !important;
+}

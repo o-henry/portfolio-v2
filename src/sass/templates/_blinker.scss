@@ -17,6 +17,11 @@
   animation-fill-mode: forwards;
 }
 
+.blinker-video {
+  position: absolute;
+  top: 6rem;
+}
+
 @keyframes blinker-media {
   from {
     top: 1000px;

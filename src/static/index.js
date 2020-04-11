@@ -6,3 +6,4 @@ export { default as crunch } from './crunch.png';
 export { default as blinker } from './blinker.png';
 export { default as landing } from './landingPapa.png';
 export { default as cookie } from './cookie.png';
+export { default as tent } from './tent.png';

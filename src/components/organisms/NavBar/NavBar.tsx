@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from 'react-router-dom'
 import { Contact } from 'components'
 import { useTransition } from "react-spring";
 
@@ -12,6 +13,7 @@ function NavBar() {
 
     return (
         <div className="navbar">
+            <NavLink id="henry" to="/" style={{ textDecoration: 'none' }}>Henry</NavLink>
             <button
                 className="show-modal-button"
                 onClick={() => setModalVisible(true)}

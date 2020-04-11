@@ -7,7 +7,6 @@
   position: absolute;
   z-index: 1;
   padding: 2rem 0 0 0;
-  border-bottom: 1px solid black;
 }
 
 .show-modal-button {
@@ -18,5 +17,12 @@
   font-size: 1rem;
   letter-spacing: 0.15rem;
   cursor: pointer;
+  border-bottom: 1px solid black;
   color: black;
+}
+
+#henry {
+  border: none !important;
+  position: absolute;
+  right: 38rem;
 }

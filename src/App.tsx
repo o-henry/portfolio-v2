@@ -1,7 +1,7 @@
 //@ts-ignore
 //@ts-nocheck
 import React from 'react';
-import { Main, Blinker } from 'pages';
+import { Main, Blinker, Crunch, Insta } from 'pages';
 import { NavBar } from 'components';
 import { Switch, Route, useLocation } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
@@ -24,6 +24,8 @@ const App: React.FC = () => {
         <Switch location={location}>
           <Route exact path="/" component={Main}></Route>
           <Route path="/blinker" component={Blinker}></Route>
+          <Route path="/crunch" component={Crunch}></Route>
+          <Route paht="/insta" component={Insta}></Route>
         </Switch>
       </animated.div>
     </>
