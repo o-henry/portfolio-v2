@@ -78,6 +78,9 @@ function MainTemplate(): React.ReactElement {
             // height: 500,
             boxShadow: '0 20px 20px rgba(0,0,0,.08) !important',
             transition: 'all 250ms cubic-bezier(.02, .01, .47, 1)',
+            '&:hover': {
+                transform: 'translate(0, -20px)!important'
+            },
         },
         media: {
             // margin: '3rem 0 3rem 0',
