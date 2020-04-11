@@ -84,7 +84,7 @@ function MainTemplate(): React.ReactElement {
             padding: '1rem',
             height: 250,
         },
-        education: {
+        footer: {
             fontFamily: 'Raleway',
             fontWeight: 'bold',
             background: '#f1f5f5',
@@ -99,19 +99,6 @@ function MainTemplate(): React.ReactElement {
             textAlign: 'left',
             margin: '28rem 0 0 0'
         },
-        footer: {
-            fontFamily: 'Raleway',
-            fontWeight: 'bold',
-            fontSize: '4rem',
-            paddingRight: theme.spacing(5),
-            paddingLeft: theme.spacing(5),
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            // alignItems: 'center',
-            color: theme.palette.text.secondary,
-            height: '5rem',
-        }
     }));
 
     const classes = useStyles();
@@ -141,8 +128,8 @@ function MainTemplate(): React.ReactElement {
                             <div className="icon-layout">
                                 <FaJsSquare className="icon" id="js-icon" size={50} />
                                 <FaReact className="icon" id="react-icon" size={50} />
-                                <FaAws className="icon" id="aws-icon" size={50} />
                                 <FaNode className="icon" id="node-icon" size={65} />
+                                <FaAws className="icon" id="aws-icon" size={50} />
                                 <DiMongodb className="icon" id="md-icon" size={50} />
                                 <img src={apolloGql} id="apollo-gql" alt='gql' className="icon" width="53rem" />
                                 <FaHtml5 className="icon" id="html-icon" size={45} />
@@ -312,12 +299,24 @@ function MainTemplate(): React.ReactElement {
                                             <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 쿠키런 과제 사전예약 페이지
+                                                <span>
+                                                    <a
+                                                        id="link-position"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        href="https://github.com/o-henry/Cookie_Run_Project"
+                                                    >
+                                                        <FaGithub size={20} />
+                                                    </a>
+                                                </span>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            <Link to="/cookie" style={{ textDecoration: 'none' }}>
+                                                Learn More
+                                            </Link>
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -362,7 +361,7 @@ function MainTemplate(): React.ReactElement {
                 </section> */}
                 <section>
                     <Grid item xs={12}>
-                        <Paper className={classes.education}>
+                        <Paper className={classes.footer}>
                             <div className="Ani-hover">
                                 <span id="copyright">
                                     © 2020 CH. All right reserved.
