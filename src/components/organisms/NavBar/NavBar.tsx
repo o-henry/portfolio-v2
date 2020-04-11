@@ -20,16 +20,18 @@ function NavBar() {
             >
                 CONTACT
             </button>
-            {transitions.map(
-                ({ item, key, props: style }) =>
-                    item && (
-                        <Contact
-                            style={style}
-                            closeModal={() => setModalVisible(false)}
-                            key={key}
-                        />
-                    )
-            )}
+            <div className="contact-layout">
+                {transitions.map(
+                    ({ item, key, props: style }) =>
+                        item && (
+                            <Contact
+                                style={style}
+                                closeModal={() => setModalVisible(false)}
+                                key={key}
+                            />
+                        )
+                )}
+            </div>
         </div>
     );
 }

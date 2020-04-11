@@ -24,10 +24,11 @@ function Blinker(): React.ReactElement {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            alignContent: 'center',
             textAlign: 'left',
             color: theme.palette.text.secondary,
             height: '48rem',
-            flexDirection: 'column'
+            flexDirection: 'column',
         },
     }))
 

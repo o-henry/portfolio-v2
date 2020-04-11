@@ -66,10 +66,12 @@ function MainTemplate(): React.ReactElement {
             display: 'flex',
             justifyContent: 'center',
             textAlign: 'center',
-            alignItems: 'flex-start',
+            alignItems: 'center',
+            alignContent: 'center',
             paddingTop: '5rem',
             height: '49rem',
             color: 'rgba(0, 0, 0, 0.54)',
+            flexDirection: 'column'
             // background: 'linear-gradient(rgb(255, 255, 255) 0%, rgb(184, 242, 255) 40%)'
         },
         card: {
@@ -100,7 +102,7 @@ function MainTemplate(): React.ReactElement {
             justifyContent: 'center',
             alignItems: 'flex-end',
             textAlign: 'left',
-            margin: '28rem 0 0 0'
+            // margin: '50rem 0 0 0'
         },
     }));
 
@@ -143,228 +145,208 @@ function MainTemplate(): React.ReactElement {
                         </Paper>
                     </Grid>
                 </section>
-                <section>
-                    <Paper className={classes.portfolio}>
-                        <div>
-                            <h2 id="work-head">WORK</h2>
-                            <div className="title-layout">
-                                <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={blinker}
-                                            title="BLINKER"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
-                                                윙크로 게임하기
-                                                <span>
-                                                    <a
-                                                        id="link-position"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        href="https://github.com/o-henry/Blinker_Client"
-                                                    >
-                                                        <FaGithub size={20} />
-                                                    </a>
-                                                </span>
-                                                <span>
-                                                    <a
-                                                        id="game-position"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        href="https://d3hj5v0x0oqu9l.cloudfront.net/"
-                                                    >
-                                                        <IoLogoGameControllerB size={26} />
-                                                    </a>
-                                                </span>
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            <Link to="/blinker" style={{ textDecoration: 'none' }}>
-                                                Learn More
-                                            </Link>
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-
-                                <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={crunch}
-                                            title="CRUNCH"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                개인화 추천 시스템
-                                                <span>
-                                                    <a
-                                                        id="game-position"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        href="https://o-henry.github.io/2019/10/21/AWSPersonalize/"
-                                                    >
-                                                        <FaBlogger size={26} />
-                                                    </a>
-                                                </span>
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            <Link to="/crunch" style={{ textDecoration: 'none' }}>
-                                                Learn More
-                                            </Link>
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-
-                                <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={local}
-                                            title="LOCAL SNS"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                인스타 기반 장소 추천 앱
-                                                <span>
-                                                    <a
-                                                        id="link-position"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        href="https://github.com/o-henry/LocalServer"
-                                                    >
-                                                        <FaGithub size={20} />
-                                                    </a>
-                                                </span>
-                                                <span>
-                                                    <a
-                                                        id="game-position"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        href="https://o-henry.github.io/2019/10/29/Insta/"
-                                                    >
-                                                        <FaBlogger size={26} />
-                                                    </a>
-                                                </span>
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            <Link to="/insta" style={{ textDecoration: 'none' }}>
-                                                Learn More
-                                            </Link>
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-
-                                <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={landing}
-                                            title="PAPAYA"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Papaya</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                Papaya 랜딩페이지
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            <a href="https://www.papayamap.io/" target="_blank">
-                                                Learn More
-                                            </a>
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-
-                                <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={cookie}
-                                            title="COOKIE"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                쿠키런 과제 사전예약 페이지
-                                                <span>
-                                                    <a
-                                                        id="link-position"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        href="https://github.com/o-henry/Cookie_Run_Project"
-                                                    >
-                                                        <FaGithub size={20} />
-                                                    </a>
-                                                </span>
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            <Link to="/cookie" style={{ textDecoration: 'none' }}>
-                                                Learn More
-                                            </Link>
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-
-                                <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Coming Soon...</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                2020... Maybe?
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            Learn More
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-                            </div>
-                        </div>
-                    </Paper>
-                </section>
-                {/* <section>
+                <section id="card-section">
                     <Grid item xs={12}>
-                        <Paper className={classes.education}>
+                        <Paper className={classes.portfolio}>
                             <div>
-                                <h2>
-                                    EDUCATION AND ACTIVITIES
-                                </h2>
+                                <h2 id="work-head">WORK</h2>
+                                <div className="title-layout">
+                                    <Card className={classes.card}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image={blinker}
+                                                title="BLINKER"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
+                                                    윙크로 게임하기
+                                                <span>
+                                                        <a
+                                                            id="link-position"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            href="https://github.com/o-henry/Blinker_Client"
+                                                        >
+                                                            <FaGithub size={20} />
+                                                        </a>
+                                                    </span>
+                                                    <span>
+                                                        <a
+                                                            id="game-position"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            href="https://d3hj5v0x0oqu9l.cloudfront.net/"
+                                                        >
+                                                            <IoLogoGameControllerB size={26} />
+                                                        </a>
+                                                    </span>
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+
+                                        <CardActions>
+                                            <Button size="small" color="primary">
+                                                <Link to="/blinker" style={{ textDecoration: 'none' }}>
+                                                    Learn More
+                                            </Link>
+                                            </Button>
+                                        </CardActions>
+                                    </Card>
+
+                                    <Card className={classes.card}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image={crunch}
+                                                title="CRUNCH"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    개인화 추천 시스템
+                                                <span>
+                                                        <a
+                                                            id="game-position"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            href="https://o-henry.github.io/2019/10/21/AWSPersonalize/"
+                                                        >
+                                                            <FaBlogger size={26} />
+                                                        </a>
+                                                    </span>
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" color="primary">
+                                                <Link to="/crunch" style={{ textDecoration: 'none' }}>
+                                                    Learn More
+                                            </Link>
+                                            </Button>
+                                        </CardActions>
+                                    </Card>
+
+                                    <Card className={classes.card}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image={local}
+                                                title="LOCAL SNS"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    인스타 기반 장소 추천 앱
+                                                <span>
+                                                        <a
+                                                            id="link-position"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            href="https://github.com/o-henry/LocalServer"
+                                                        >
+                                                            <FaGithub size={20} />
+                                                        </a>
+                                                    </span>
+                                                    <span>
+                                                        <a
+                                                            id="game-position"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            href="https://o-henry.github.io/2019/10/29/Insta/"
+                                                        >
+                                                            <FaBlogger size={26} />
+                                                        </a>
+                                                    </span>
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" color="primary">
+                                                <Link to="/insta" style={{ textDecoration: 'none' }}>
+                                                    Learn More
+                                            </Link>
+                                            </Button>
+                                        </CardActions>
+                                    </Card>
+
+                                    <Card className={classes.card}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image={landing}
+                                                title="PAPAYA"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">Papaya</Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    Papaya 랜딩페이지
+                                            </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" color="primary">
+                                                <a href="https://www.papayamap.io/" target="_blank">
+                                                    Learn More
+                                            </a>
+                                            </Button>
+                                        </CardActions>
+                                    </Card>
+
+                                    <Card className={classes.card}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image={cookie}
+                                                title="COOKIE"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    쿠키런 과제 사전예약 페이지
+                                                <span>
+                                                        <a
+                                                            id="link-position"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            href="https://github.com/o-henry/Cookie_Run_Project"
+                                                        >
+                                                            <FaGithub size={20} />
+                                                        </a>
+                                                    </span>
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" color="primary">
+                                                <Link to="/cookie" style={{ textDecoration: 'none' }}>
+                                                    Learn More
+                                            </Link>
+                                            </Button>
+                                        </CardActions>
+                                    </Card>
+
+                                    <Card className={classes.card}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">Coming Soon...</Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    2020... Maybe?
+                                            </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" color="primary">
+                                                Learn More
+                                        </Button>
+                                        </CardActions>
+                                    </Card>
+                                </div>
                             </div>
-                            <div className="education">
-                                Code states(Bootcamp) Immersive Course 14 | 2019 <br />
-                                AWS 101, 201 Seminar | 2019 <br />
-                                AWS Webinar | 2019
-                            </div>
-                        </Paper>
-                    </Grid>
-                </section> */}
-                <section>
-                    <Grid item xs={12}>
-                        <Paper className={classes.footer}>
                             <div className="Ani-hover">
                                 <span id="copyright">
                                     © 2020 CH. All right reserved.

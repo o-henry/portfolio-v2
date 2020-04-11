@@ -59,19 +59,21 @@ body,
 }
 
 section {
-  // height: 101vh;
-  width: 100%;
-  scroll-snap-align: center;
-}
-footer {
-  height: 5vh;
   width: 100%;
   scroll-snap-align: center;
 }
 
+#footer-layout {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
 header {
   display: flex !important;
-  justify-content: center;
+  justify-content: center !important;
+  align-content: center !important;
 }
 
 #root > div > div {
