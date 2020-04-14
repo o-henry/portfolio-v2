@@ -13,7 +13,7 @@ function NavBar() {
     });
 
     useEffect(() => {
-        setTimeout(() => setClasses('visible'), 14500)
+        setTimeout(() => setClasses('visible'), 13500)
     })
 
     return (

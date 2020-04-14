@@ -178,10 +178,10 @@ function MainTemplate(): React.ReactElement {
                     <Grid item xs={12}>
                         <Paper className={classes.education}>
                             <div>
-                                <h2 id="h2-letter">EDUCATION</h2>
+                                <h2>EDUCATION</h2>
                                 <div className="edu-content">
                                     <div>
-                                        <span id="bold-name">코드스테이츠(부트캠프) Immersive Course 14</span> 2019.07 - 2019.10
+                                        <span id="bold-name">코드스테이츠(부트캠프) </span> 2019.07 - 2019.10
                                     </div>
                                     <span id="bold-name">AWS 101, 201</span> Webina & Seminar
                                 </div>
