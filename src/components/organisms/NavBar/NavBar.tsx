@@ -12,7 +12,9 @@ function NavBar() {
     });
 
     return (
+
         <div className="navbar">
+
             <NavLink id="henry" to="/" style={{ textDecoration: 'none' }}>Henry</NavLink>
             <button
                 className="show-modal-button"
