@@ -13,7 +13,7 @@ function Content(): React.ReactElement {
      character : ["I'm a junior developer 
                        who loves collaboration and communication."]
  }`}
-                    <Typist.Delay ms={500} />
+                    <Typist.Delay ms={100} />
                 </Typist >
             </pre>
         </div>

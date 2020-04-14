@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom'
 import { Contact } from 'components'
 import { useTransition } from "react-spring";
 
 function NavBar() {
+    const [classes, setClasses] = useState('hidden')
     const [modalVisible, setModalVisible] = useState(false);
     const transitions = useTransition(modalVisible, null, {
         from: { opacity: 0, marginTop: -1000, transform: 'translateX(0,-100%,0)' },
         enter: { opacity: 1, marginTop: 0, transform: 'translateX(0,0%,0)' },
         leave: { opacity: 0, transform: 'translateX(0,50%,0)' },
     });
+
+    useEffect(() => {
+        setTimeout(() => setClasses('visible'), 14500)
+    })
 
     return (
 
@@ -20,7 +25,10 @@ function NavBar() {
                 className="show-modal-button"
                 onClick={() => setModalVisible(true)}
             >
-                CONTACT
+                <div className={classes}>
+                    CONTACT
+                </div>
+
             </button>
             <div className="contact-layout">
                 {transitions.map(
