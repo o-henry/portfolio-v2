@@ -59,15 +59,30 @@ function MainTemplate(): React.ReactElement {
         education: {
             paddingRight: theme.spacing(5),
             paddingLeft: theme.spacing(5),
-            padding: '5rem 0 0 0',
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'flex-start',
+            alignItems: 'center',
             textAlign: 'left',
             color: theme.palette.text.secondary,
-            height: '49rem',
+            height: '29rem',
             fontFamily: 'Raleway',
             fontWeight: '100',
+            textAlign: 'center',
+            fontSize: '4rem'
+        },
+        experience: {
+            paddingRight: theme.spacing(5),
+            paddingLeft: theme.spacing(5),
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'left',
+            color: theme.palette.text.secondary,
+            height: '29rem',
+            fontFamily: 'Raleway',
+            background: '#f1f5f5',
+            fontWeight: '100',
+            textAlign: 'center',
             fontSize: '4rem'
         },
         icon: {
@@ -159,13 +174,33 @@ function MainTemplate(): React.ReactElement {
                         </Paper>
                     </Grid>
                 </section>
-                {/* <section>
+                <section>
                     <Grid item xs={12}>
                         <Paper className={classes.education}>
-                            <div><h2>EDUCATION & EXPERIENCE</h2></div>
+                            <div>
+                                <h2 id="h2-letter">EDUCATION</h2>
+                                <div className="edu-content">
+                                    <div>
+                                        <span id="bold-name">코드스테이츠(부트캠프) Immersive Course 14</span> 2019.07 - 2019.10
+                                    </div>
+                                    <span id="bold-name">AWS 101, 201</span> Webina & Seminar
+                                </div>
+                            </div>
                         </Paper>
                     </Grid>
-                </section> */}
+                </section>
+                <section className="exp-layout">
+                    <Grid item xs={12}>
+                        <Paper className={classes.experience}>
+                            <div>
+                                <h2>EXPERIENCE</h2>
+                                <div className="exp-content">
+                                    <span id="bold-name">Papaya</span> Corp. 재직중
+                                </div>
+                            </div>
+                        </Paper>
+                    </Grid>
+                </section>
                 <section id="card-section">
                     <Grid item xs={12}>
                         <Paper className={classes.portfolio}>
