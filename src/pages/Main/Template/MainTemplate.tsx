@@ -53,7 +53,21 @@ function MainTemplate(): React.ReactElement {
             height: '49rem',
             background: '#f1f5f5',
             fontFamily: 'Raleway',
-            fontWeight: 'bold',
+            fontWeight: '100',
+            fontSize: '4rem'
+        },
+        education: {
+            paddingRight: theme.spacing(5),
+            paddingLeft: theme.spacing(5),
+            padding: '5rem 0 0 0',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            textAlign: 'left',
+            color: theme.palette.text.secondary,
+            height: '49rem',
+            fontFamily: 'Raleway',
+            fontWeight: '100',
             fontSize: '4rem'
         },
         icon: {
@@ -61,7 +75,7 @@ function MainTemplate(): React.ReactElement {
         },
         portfolio: {
             fontFamily: 'Raleway',
-            fontWeight: 'bold',
+            fontWeight: '100',
             fontSize: '4rem',
             display: 'flex',
             justifyContent: 'center',
@@ -145,6 +159,13 @@ function MainTemplate(): React.ReactElement {
                         </Paper>
                     </Grid>
                 </section>
+                {/* <section>
+                    <Grid item xs={12}>
+                        <Paper className={classes.education}>
+                            <div><h2>EDUCATION & EXPERIENCE</h2></div>
+                        </Paper>
+                    </Grid>
+                </section> */}
                 <section id="card-section">
                     <Grid item xs={12}>
                         <Paper className={classes.portfolio}>
