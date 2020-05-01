@@ -299,7 +299,7 @@ function MainTemplate(): React.ReactElement {
                                                         id="link-position"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        href="https://github.com/o-henry/LocalServer"
+                                                        href="https://github.com/o-henry/local-server-v2"
                                                     >
                                                         <FaGithub size={20} />
                                                     </a>
