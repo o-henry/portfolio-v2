@@ -1,7 +1,7 @@
 //@ts-ignore
 //@ts-nocheck
 import React from 'react';
-import { Main, Blinker, Crunch, Insta, Cookierun } from 'pages';
+import { Main, Blinker, Crunch, Insta, Cookierun, Papaya } from 'pages';
 import { NavBar } from 'components';
 import { Switch, Route, useLocation } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
@@ -27,6 +27,7 @@ const App: React.FC = () => {
           <Route path="/crunch" component={Crunch}></Route>
           <Route path="/insta" component={Insta}></Route>
           <Route path="/cookie" component={Cookierun}></Route>
+          <Route path="/papaya" component={Papaya}></Route>
         </Switch>
       </animated.div>
     </>

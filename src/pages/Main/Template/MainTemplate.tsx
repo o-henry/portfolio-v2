@@ -2,7 +2,7 @@
 import React from 'react'
 import { Content } from 'components';
 import { Link } from 'react-router-dom'
-import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker, landing } from 'static';
+import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker, landing, papayaWeb } from 'static';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare, } from "react-icons/fa";
 import { GoBrowser } from 'react-icons/go'
@@ -195,7 +195,7 @@ function MainTemplate(): React.ReactElement {
                             <div>
                                 <h2>EXPERIENCE</h2>
                                 <div className="exp-content">
-                                    <span id="bold-name">Papaya</span> Corp. 재직중
+                                    <span id="bold-name">Papaya</span> Corp.
                                 </div>
                             </div>
                         </Paper>
@@ -216,7 +216,8 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
-                                                윙크로 게임하기
+                                                윙크로 게임하기<br />
+                                                Working period : 2주
                                                 <span>
                                                     <a
                                                         id="link-position"
@@ -260,7 +261,8 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                개인화 추천 시스템
+                                                개인화 추천 시스템<br />
+                                                Working period : 4주
                                                 <span>
                                                     <a
                                                         id="game-position"
@@ -293,7 +295,8 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                인스타 기반 장소 추천 앱
+                                                인스타 기반 장소 추천 앱<br />
+                                                Working period : 진행 중...
                                                 <span>
                                                     <a
                                                         id="link-position"
@@ -336,7 +339,8 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Papaya</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                Papaya 랜딩페이지
+                                                Papaya 랜딩페이지 <br />
+                                                Working period : 6일
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -359,7 +363,8 @@ function MainTemplate(): React.ReactElement {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                쿠키런 과제 사전예약 페이지
+                                                쿠키런 과제 사전예약 페이지<br />
+                                                Working period : 4일
                                                 <span>
                                                     <a
                                                         id="link-position"
@@ -386,17 +391,22 @@ function MainTemplate(): React.ReactElement {
                                     <CardActionArea>
                                         <CardMedia
                                             className={classes.media}
+                                            image={papayaWeb}
+                                            title="papayaWeb"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Coming Soon...</Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">Papaya web app</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                2020... Maybe?
+                                                Papaya 반응형 웹 기반 ios 앱 <br />
+                                                Working period : 4주
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            <Link to="/papaya" style={{ textDecoration: 'none' }}>
+                                                Learn More
+                                            </Link>
                                         </Button>
                                     </CardActions>
                                 </Card>
