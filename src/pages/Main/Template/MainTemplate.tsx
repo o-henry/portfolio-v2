@@ -2,9 +2,10 @@
 import React from 'react'
 import { Content } from 'components';
 import { Link } from 'react-router-dom'
-import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker, landing, papayaWeb } from 'static';
+import { apolloGql, MouseScroll, typescriptIcon, local, crunch, cookie, blinker, landing, papayaWeb, expo, styled } from 'static';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
-import { FaGoogle, FaGithub, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare, } from "react-icons/fa";
+import { FaGoogle, FaBootstrap, FaGithub, FaSass, FaLinkedin, FaBlogger, FaAws, FaNode, FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaPython } from "react-icons/fa";
+import { AiOutlineAntDesign } from 'react-icons/ai'
 import { GoBrowser } from 'react-icons/go'
 import { IoLogoGameControllerB } from 'react-icons/io'
 import { DiMysql, DiMongodb } from "react-icons/di";
@@ -64,7 +65,7 @@ function MainTemplate(): React.ReactElement {
             alignItems: 'center',
             textAlign: 'left',
             color: theme.palette.text.secondary,
-            height: '29rem',
+            height: '34rem',
             fontFamily: 'Raleway',
             fontWeight: '100',
             textAlign: 'center',
@@ -78,7 +79,7 @@ function MainTemplate(): React.ReactElement {
             alignItems: 'center',
             textAlign: 'left',
             color: theme.palette.text.secondary,
-            height: '29rem',
+            height: '34rem',
             fontFamily: 'Raleway',
             background: '#f1f5f5',
             fontWeight: '100',
@@ -214,11 +215,8 @@ function MainTemplate(): React.ReactElement {
                                             title="BLINKER"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Blinker</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
-                                                윙크로 게임하기<br />
-                                                Working period : 2주
-                                                <span>
+                                            <Typography gutterBottom variant="h5" component="h2">Blinker
+                                                <span className="link-layout-css">
                                                     <a
                                                         id="link-position"
                                                         target="_blank"
@@ -227,8 +225,6 @@ function MainTemplate(): React.ReactElement {
                                                     >
                                                         <FaGithub size={20} />
                                                     </a>
-                                                </span>
-                                                <span>
                                                     <a
                                                         id="game-position"
                                                         target="_blank"
@@ -238,6 +234,15 @@ function MainTemplate(): React.ReactElement {
                                                         <IoLogoGameControllerB size={26} />
                                                     </a>
                                                 </span>
+                                            </Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p" fontFaimly="Noto Sans KR">
+                                                윙크로 게임하기<br />
+                                                Working period : 2주
+
+                                                <div className="useStack">
+                                                    <FaAws className="icon-stack" id="aws-icon" size={20} />
+                                                    <FaReact className="icon-stack" id="react-icon" size={20} />
+                                                </div>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -259,10 +264,7 @@ function MainTemplate(): React.ReactElement {
                                             title="CRUNCH"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Crunch Price</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                개인화 추천 시스템<br />
-                                                Working period : 4주
+                                            <Typography gutterBottom variant="h5" component="h2">Crunch Price
                                                 <span>
                                                     <a
                                                         id="game-position"
@@ -273,6 +275,17 @@ function MainTemplate(): React.ReactElement {
                                                         <FaBlogger size={26} />
                                                     </a>
                                                 </span>
+                                            </Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p">
+                                                개인화 추천 시스템<br />
+                                                Working period : 4주
+
+                                                <div className="useStack">
+                                                    <FaAws className="icon-stack" id="aws-icon" size={20} />
+                                                    <DiMongodb className="icon-stack" id="md-icon" size={20} />
+                                                    <FaReact className="icon-stack" id="react-icon" size={20} />
+                                                    <FaPython className="icon-stack" id="node-icon" size={20} />
+                                                </div>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -293,10 +306,7 @@ function MainTemplate(): React.ReactElement {
                                             title="LOCAL SNS"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Local SNS</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                인스타 기반 장소 추천 앱<br />
-                                                Working period : 진행 중...
+                                            <Typography gutterBottom variant="h5" component="h2">Local SNS
                                                 <span>
                                                     <a
                                                         id="link-position"
@@ -317,6 +327,18 @@ function MainTemplate(): React.ReactElement {
                                                         <FaBlogger size={26} />
                                                     </a>
                                                 </span>
+                                            </Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p">
+                                                인스타 기반 장소 추천 앱<br />
+                                                Working period : 진행 중...
+                                                <div className="useStack">
+                                                    <DiMongodb className="icon-stack" id="md-icon" size={20} />
+                                                    <FaReact className="icon-stack" id="react-icon" size={20} />
+                                                    <FaNode className="icon-stack" id="node-icon" size={20} />
+                                                    <FaSass className="icon-stack" id="react-icon" size={20} />
+                                                    <img src={typescriptIcon} alt="ts" className="icon-stack" width="20rem" />
+                                                    <img src={expo} alt="expo" className="icon-stack" width="17rem" />
+                                                </div>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -341,6 +363,12 @@ function MainTemplate(): React.ReactElement {
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 Papaya 랜딩페이지 <br />
                                                 Working period : 6일
+                                                <div className="useStack">
+                                                    <FaAws className="icon-stack" id="aws-icon" size={20} />
+                                                    <FaReact className="icon-stack" id="react-icon" size={20} />
+                                                    <FaBootstrap className="icon-stack" id="react-icon" size={20} />
+                                                    <img src={styled} alt="style-compo" className="icon-stack" width="25rem" />
+                                                </div>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -361,11 +389,8 @@ function MainTemplate(): React.ReactElement {
                                             title="COOKIE"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">Cookie Run</Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                쿠키런 과제 사전예약 페이지<br />
-                                                Working period : 4일
-                                                <span>
+                                            <Typography gutterBottom variant="h5" component="h2">Cookie Run
+                                             <span>
                                                     <a
                                                         id="link-position"
                                                         target="_blank"
@@ -374,7 +399,16 @@ function MainTemplate(): React.ReactElement {
                                                     >
                                                         <FaGithub size={20} />
                                                     </a>
-                                                </span>
+                                                </span></Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p">
+                                                쿠키런 과제 사전예약 페이지<br />
+                                                Working period : 4일
+                                                <div className="useStack">
+                                                    <img className="icon-stack" src={apolloGql} alt="gql" width="20rem" />
+                                                    <FaReact className="icon-stack" id="react-icon" size={20} />
+                                                    <img src={typescriptIcon} alt="ts" className="icon-stack" width="20rem" />
+                                                    <FaSass className="icon-stack" id="react-icon" size={20} />
+                                                </div>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -398,7 +432,15 @@ function MainTemplate(): React.ReactElement {
                                             <Typography gutterBottom variant="h5" component="h2">Papaya web app</Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 Papaya 반응형 웹 기반 ios 앱 <br />
-                                                Working period : 4주
+                                                Working period : 4주 <br />
+                                                <div className="useStack">
+                                                    <img className="icon-stack" src={apolloGql} alt="gql" width="20rem" />
+                                                    <FaAws className="icon-stack" id="aws-icon" size={20} />
+                                                    <FaReact className="icon-stack" id="react-icon" size={20} />
+                                                    <FaSass className="icon-stack" id="react-icon" size={20} />
+                                                    <AiOutlineAntDesign className="icon-stack" id="react-icon" size={20} />
+                                                    <img src={typescriptIcon} alt="ts" className="icon-stack" width="20rem" />
+                                                </div>
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>

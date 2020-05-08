@@ -8,3 +8,6 @@ export { default as landing } from './landingPapa.png';
 export { default as cookie } from './cookie.png';
 export { default as tent } from './tent.png';
 export { default as papayaWeb } from './papayawebapp.png';
+export { default as expo } from './expo.svg';
+export { default as pupp } from './pupp.jpeg';
+export { default as styled } from './styled.svg';

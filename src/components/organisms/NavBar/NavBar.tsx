@@ -19,7 +19,6 @@ function NavBar() {
     return (
 
         <div className="navbar">
-
             <NavLink id="henry" to="/" style={{ textDecoration: 'none' }}>Henry</NavLink>
             <button
                 className="show-modal-button"
@@ -28,7 +27,6 @@ function NavBar() {
                 <div className={classes}>
                     CONTACT
                 </div>
-
             </button>
             <div className="contact-layout">
                 {transitions.map(
@@ -41,6 +39,9 @@ function NavBar() {
                             />
                         )
                 )}
+            </div>
+            <div id="layout-resume">
+                <a href="https://www.notion.so/elt1992/Lee-Chan-Haeng-074a6e1fabd244ff830ae862a200dd5f">Resume</a>
             </div>
         </div>
     );
